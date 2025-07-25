@@ -2,6 +2,34 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+/* Default transparent background */
+.navbar {
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+/* When scrolled */
+.navbar.scrolled {
+  background-color: #022a3b; /* or black (#000) */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Make nav links white when scrolled */
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled i {
+  color: #fff !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
 .nav-top{
  
     background-image: url(/img/hero-bg.jpg);
@@ -45,12 +73,13 @@ a.grp-color {
 .icon-nav i:hover{
     color: #F28123;
 }
-.fruits-heading{
+
+.fruits-heading {
     /* width: 50%; */
-    margin: auto;
     text-align: center;
-    margin-top: 10%;
     position: relative;
+    display: inline-block;
+    margin: 16% 23%;
 }
 .fruits-heading h5{
     color: #F28123;
@@ -502,17 +531,17 @@ a.more-news:hover {
 .sec-8{
     width: 100%;
     background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .sec-8-main {
-    margin-top: 100px;
-    display: inline-block;
+    /* margin-top: 100px; */
+    /* display: inline-block; */
 }
- .item img {
- width: 150px !important;
- object-fit: cover;
- 
+.item-img-sec-8 img {
+    width: 180px !important;
 }
-.owl-nav button {
+/* .owl-nav button {
   position: absolute;
   top: 50%;
   background-color: #000;
@@ -530,9 +559,9 @@ a.more-news:hover {
 .owl-dots {
   text-align: center;
   padding-top: 15px;
-}
+} */
 
-.owl-nav button {
+/* .owl-nav button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -545,14 +574,12 @@ span {
 }
 .owl-nav button:focus {
     outline: none;
-}
+} */
 /* .owl-item {
   height: 300px !important; 
   display: flex;
 } */
-.item {
-    width: 100%;
-}
+
 /* sec-8 ended here */
 .footer-sec{
     background-color: #051922;
@@ -566,6 +593,7 @@ span {
 }
 .heading-sec h2 {
     font-size: 25px;
+    margin-left: 20px;
 }
 .heading-sec p {
     font-size: 13px;
@@ -590,12 +618,20 @@ span {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     cursor: pointer;
+    margin-left: 4px;
+}
+.icons-info i:hover{
+    background-color: #d47a00;
+    color: black;
 }
 .footer-main ul li {
     color: #8d8d8d;
     font-size: 15px;
     /* text-decoration: none; */
     list-style: none;
+}
+.footer-main ul li:hover{
+    color: #d47a00;
 }
 /* footer-sec ended here */
 .footer{
