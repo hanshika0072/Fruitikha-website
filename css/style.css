@@ -4,21 +4,18 @@
 }
 
 
-
-/* Default transparent background */
 .navbar {
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
   background-color: transparent;
   padding: 20px 0;
 }
 
-/* When scrolled */
+
 .navbar.scrolled {
   background-color: #022a3b; /* or black (#000) */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Make nav links white when scrolled */
 .navbar.scrolled .nav-link,
 .navbar.scrolled .navbar-brand,
 .navbar.scrolled i {
